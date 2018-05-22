@@ -1,3 +1,14 @@
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBSDkYVRe-xdYqcLCZ0yW3uuje4f4EQ6mc",
+    authDomain: "questetraassistant.firebaseapp.com",
+    databaseURL: "https://questetraassistant.firebaseio.com",
+    projectId: "questetraassistant",
+    storageBucket: "questetraassistant.appspot.com",
+    messagingSenderId: "1096123953452"
+  };
+  firebase.initializeApp(config);
+
 var provider = new firebase.auth.GoogleAuthProvider();
 provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 firebase.auth().useDeviceLanguage();
